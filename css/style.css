@@ -1,0 +1,93 @@
+/* mainエリア -----------------------*/
+.main {
+    height: 2100px;
+    background: linear-gradient(45deg, #030303, #03030366);
+}
+.body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #030303;
+}
+.footer{
+    background-color: #f2f2f2;
+    height: fit-content;
+}
+.footer-line{
+    width: 80%;
+}
+.upper-footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0 ;
+    .upper-link{
+        width: max(25vw, 20em);
+        border-left: #cccccc 1px solid;
+        &:hover{
+             color: coral;
+             transition: all 0.3s;
+         }
+        &:last-child{
+             border-right: #cccccc 1px solid;
+         }
+        .upper-items{
+            padding: 2em 0;
+            .main-footer {
+                font-size: 30px;
+                justify-content: center;
+                text-align: center;
+                font-family: 'Abril Fatface', sans-serif;
+                font-weight: bold;
+            }
+            .attached-title {
+                font-family: 'Noto Sans JP', sans-serif;
+                text-align: center;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 45em){
+    .upper-footer{
+        flex-direction: column;
+        padding: 2em 0 0 0;
+        .upper-link{
+            width: 80% ;
+            border-left: none;
+            border-top: #cccccc 1px solid;
+            &:last-child{
+                border-right: none;
+            }
+            .upper-items{
+                padding: 1em 0;
+            }
+        }
+
+    }
+
+}
+.middle-list{
+    display: flex;
+    justify-content: center;
+    padding: 1em 10vw;
+    flex-wrap: wrap;
+    .list-items{
+        width: max(10em,25vw);
+        font-family: 'Noto Sans JP', sans-serif;
+        text-align: center;
+        padding: 0.5em 0;
+    }
+}
+
+.logo-photo-wrapper{
+    display: flex;
+    justify-content: center;
+    .logo-photo{
+        width:3em;
+        margin: 0.5em 1em;
+    }
+}
